@@ -8,8 +8,6 @@
 1. config
    * g:mml#ppmck_location
       * path to root directory of ppmck. (see. http://ppmck.web.fc2.com/ppmck.html)
-   * g:mml#nsf2wav_command 
-      * path to nsf2wav command. (see. https://github.com/datsuns/nsf2wav)
 
 ## usage
 
