@@ -1,5 +1,9 @@
 function! s:mml_play(f) abort
   let cmd = [&shell, &shellcmdflag, "go-mml", "-m", g:mml#ppmck_location, "-f", a:f]
+  if exists('g:mml#lame_command')
+     let cmd = cmd + ["-l", g:mml#lame_command]
+  endif
+
   if has('nvim')
     let g:mml_play_job = jobstart(cmd, {})
   elseif v:version >= 800
